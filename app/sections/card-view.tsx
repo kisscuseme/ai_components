@@ -1,8 +1,8 @@
 "use client";
 
 import { Container, Typography } from "@mui/material";
-import GuideGrid from "../components/GuideGrid";
-import { Guide } from "../components/GuideCard";
+import GuideGrid from "../components/guide-grid";
+import { Guide } from "../components/guide-card";
 
 const guides: Guide[] = [
   {
