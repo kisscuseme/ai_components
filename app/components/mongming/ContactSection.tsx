@@ -128,7 +128,7 @@ const ContactSection = () => {
                 <ContactInfo
                   icon={<LocationOnIcon />}
                   title="주소"
-                  content="서울특별시 강남구 테헤란로 123, MongMing 빌딩 7층"
+                  content="서울특별시 마포구 마포대로 123, MongMing 빌딩 7층"
                 />
               </Box>
             </Paper>

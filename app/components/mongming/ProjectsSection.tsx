@@ -78,7 +78,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "그랜드 센트럴 아파트",
-      location: "서울시 강남구",
+      location: "서울시 마포구",
       category: "아파트",
       imageUrl:
         "https://images.unsplash.com/photo-1678495846941-f4a0276834a8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwYXBhcnRtZW50JTIwa29yZWF8ZW58MHx8MHx8fDA%3D",
