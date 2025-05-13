@@ -13,7 +13,7 @@ export const HomeView = () => {
         AI 생성 템플릿
       </Typography>
       <Stack gap={2} width={0.5} mx="auto">
-        {[1, 2, 3, 4, 5, 6, 7].map((i) => {
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => {
           return (
             <Button
               key={i}
