@@ -9,7 +9,6 @@ import {
   Avatar,
   Button,
   TextField,
-  Grid,
   Chip,
 } from "@mui/material";
 import { getPostById, getCommentsByPostId, Comment } from "../../../data";
@@ -99,13 +98,13 @@ const CommentSection = ({ postId }: { postId: number }) => {
 };
 
 // 게시글 상세 페이지
-export default function PostDetailPage({
+export default async function PostDetailPage({
   params,
 }: {
-  params: { category: string; id: string };
+  params: Promise<{ category: string; id: string }>;
 }) {
   const router = useRouter();
-  const { category, id } = params;
+  const { category, id } = await params;
   const post = getPostById(parseInt(id));
 
   if (!post) {

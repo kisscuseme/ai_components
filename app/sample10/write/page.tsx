@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import {
   Box,
   Typography,
@@ -17,7 +17,15 @@ import { useRouter, useSearchParams } from "next/navigation";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 // 게시글 작성 페이지
-export default function WritePage() {
+export default function WritePageWrapper() {
+  return (
+    <Suspense fallback={<div>로딩 중...</div>}>
+      <WritePage />
+    </Suspense>
+  );
+}
+
+function WritePage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialCategory = searchParams?.get("category") || "free";

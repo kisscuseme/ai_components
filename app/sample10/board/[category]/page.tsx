@@ -15,7 +15,6 @@ import {
   TableRow,
 } from "@mui/material";
 import { getPostsByCategory } from "../../data";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import AddIcon from "@mui/icons-material/Add";
 
@@ -34,13 +33,13 @@ const getCategoryName = (category: string): string => {
 };
 
 // 게시판 리스트 페이지
-export default function CategoryPage({
+export default async function CategoryPage({
   params,
 }: {
-  params: { category: string };
+  params: Promise<{ category: string }>;
 }) {
   const router = useRouter();
-  const { category } = params;
+  const { category } = await params;
   const posts = getPostsByCategory(category);
 
   const handleWriteClick = () => {
