@@ -12,16 +12,17 @@ export const HomeView = () => {
       >
         AI 생성 템플릿
       </Typography>
-      <Stack gap={2} width={0.5} mx="auto">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => {
+      <Stack width={0.5} mx="auto" gap={0.5}>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => {
           return (
             <Button
               key={i}
+              fullWidth
               size="large"
               variant="outlined"
               color="inherit"
               sx={{
-                fontSize: "30px",
+                fontSize: "20px",
                 color: "common.white",
                 ":hover": {
                   opacity: 0.7,
